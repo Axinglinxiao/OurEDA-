@@ -14,10 +14,10 @@
         <div>
             <nav class="list">
                 <ul>
-                    <li><a href="#_what">About Us</a></li>
-                    <li><a href="#_department">Department</a></li>
-                    <li><a href="#_form">Sign Up</a></li>
-                    <li><a href="#_hello">Contact</a></li>
+                    <li><a href="javascript:scroll('_what')">About Us</a></li>
+                    <li><a href="javascript:scroll('_department')">Department</a></li>
+                    <li><a href="javascript:scroll('_form')">Sign Up</a></li>
+                    <li><a href="javascript:scroll('_hello')">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div>TO BE CONTINUED...</div>
-        <a href="#_what">
+        <a href="javascript:scroll('_what')">
             <img src="image/key.png" alt="slide">
         </a>
     </section>
@@ -112,8 +112,15 @@
             Happy&nbsp;New&nbsp;Year <br>
             every&nbsp;Duter <br>
             早日&hearts;脱单 <br>
-            <a href="#">Back&nbsp;To&nbsp;Top</a>
+            <a href="javascript:scroll('_first')">Back&nbsp;To&nbsp;Top</a>
         </p>
     </footer>
+    <script src="http://hovertree.com/ziyuan/jquery/jquery-1.11.3.min.js"></script>
+    <script src="http://keleyi.com/keleyi/phtml/jqtexiao/37/jquery.hovertreescroll.js"></script>
+    <script type="text/javascript">
+        function scroll(id) {
+            $("#" + id).HoverTreeScroll(1000);
+        }
+    </script>
 </body>
 </html>
