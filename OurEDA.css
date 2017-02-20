@@ -1,18 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Play','Lato', Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Raleway','Lato', Merriweather,'Helvetica Neue',Arial,sans-serif;
     box-sizing: border-box;
     color:black;
 }
 #_head{
     width:100%;
-    height: 80px;
+    height: 70px;
     padding: 10px;
     position:fixed;
-    border-bottom: 8px solid #f05f40;
+    /*border-bottom: 8px solid #f05f40;*/
     z-index: 999;
     background-color: white;
+    display: none;
 }
 #_head div{
     float:right;
@@ -40,8 +41,8 @@
 section#_first{
     clear:both;
     width:100%;
-    height: 600px;
-    background-image: url("image/sea.png");
+    height: 650px;
+    background-image: url("image/background.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     padding-top:100px;
@@ -50,32 +51,53 @@ section#_first{
     text-align:center;
 }
 .first h2{
-    color: #f05f40;
-    font-family:"Pinyon Script";
-    font-size:7em;
-    text-shadow: 4px 4px 5px #aaa;
-    padding-bottom:10px;
+    color: white;
+    font-size:60px;
+    letter-spacing:.1em;
+    margin-top: 100px;
+}
+.first .image1 div:first-child{
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    color:white;
+}
+.first .image1 div:first-child img{
+    float:left;
+    margin:30px 0 0 20px;
+}
+.first .image1 .right a{
+    float: right;
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 25px 50px 0 0;
+    color: white;
+}
+.first .image1 .right a:hover{
+    color:#f05f40;
 }
 .first p{
     color:#aaa;
-    font-size: 2.2em;
-    margin: 20px 0;
-    font-family: '宋体';
-    line-height: 2em;
-    font-weight: bold;
+    font-size: 1.5em;
+    margin: 10px 0 50px;
+    font-family: '微软雅黑';
+    line-height: 1em;
  }
 .first p span{
     text-decoration: line-through;
-    color:#aaa;
-    font-family:'宋体';
+    color:white;
+    font-family:"微软雅黑";
+    margin-top: 100px;
+    margin-bottom:-40px;
+    display: block;
 }
 
 #_first div + div{
-    font-family: 'Bree Serif';
     font-size:2.2em;
-    font-weight: bold;
     margin-bottom: 10px;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     text-align:center;
 }
 #_first a img{

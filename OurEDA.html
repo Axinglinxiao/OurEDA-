@@ -6,12 +6,13 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <meta charset="UTF-8">
     <title>OurEDA By Axing</title>
 </head>
 <body>
     <header id="_head">
-            <img src="image/OurEDA.png" title="OurEDA" height="50px" width="60px" style="box-shadow: 2px 2px 4px 3px #aaa;margin-left:10px;">
+            <img src="image/OurEDA1.png" title="OurEDA" height="50px" width="60px" style="margin-left:10px;">
         <div>
             <nav class="list">
                 <ul>
@@ -26,9 +27,13 @@
     <section id="_first">
         <div class="first">
             <div class="image1">
-                <h2>Our&nbsp;EDA </h2>
+                <div>
+                    <img src="image/OurEDA.png" alt="OurEDA" width="200">
+                    <div class="right"><a href="javascript:scroll('_form')">Sign Up</a></div>
+                </div>
+                <h2>OUR&nbsp;EDA </h2>
                 <p>
-                    专注移动互联网&nbsp;·&nbsp;应用跨平台开发<br>
+                    专注移动互联网 &nbsp;·&nbsp; 应用跨平台开发<br>
                     <span>全国最大同性交友平台(这个没有...)</span>
                 </p>
                 <!--<img src="image/OurEDA.png" alt="OurEDA" height="200px" width="200px">
@@ -128,6 +133,18 @@
         function scroll(id) {
             $("#" + id).HoverTreeScroll(1000);
         }
+        $(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop()>=600){
+                    $("#_head").fadeIn(300);
+                }else{
+                    $("#_head").fadeOut(300);
+                }
+                if($(window).scrollTop()>=600){
+                    $("#_what").fadeIn(300);
+                }
+            });
+        })
     </script>
 </body>
 </html>
