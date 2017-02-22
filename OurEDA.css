@@ -72,7 +72,7 @@ section#_first{
     font-size: 1.5em;
     text-decoration: none;
     list-style-type: none;
-    margin: 25px 50px 0 0;
+    margin: 30px 60px 0 0;
     color: white;
 }
 .first .image1 .right a:hover{
@@ -150,6 +150,7 @@ hr{
     width:25%;
     padding:10px 20px;
     float:left;
+    position: relative;
 }
 #_department .content2 article img{
     height:230px;
@@ -160,6 +161,42 @@ hr{
     color:#969696;
     font-size: 1.5em;
     text-align: center;
+}
+#_department .content2 article div{
+    width: 130px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    border:2px solid #969696;
+    border-radius: 6px;
+    left: 32%;
+    top: 100%;
+    z-index: 2;
+    background-color: white;
+}
+#_department .content2 article div::before{
+    content: "";
+    position:absolute;
+    border: 7px solid;
+    height: 0;
+    width: 0;
+    left: 32.5%;
+    top:-14px;
+    border-color: transparent transparent #fff transparent;
+}
+#_department .content2 article div::after{
+    content: "";
+    position:absolute;
+    border: 10px solid;
+    height: 0;
+    width: 0;
+    left:30%;
+    top:-20px;
+    border-color: transparent transparent #969696 transparent;
+    z-index: -100;
+}
+#_department .content2 article:hover div{
+    display: block;
 }
 #_form .content3{
     padding:100px 20%;
